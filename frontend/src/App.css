@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Adds consistency */
+}
+
+/* Modal */
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 16px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Softer shadow */
+  border-radius: 8px; /* Rounded modal corners for a modern look */
+}
+
+.modal.md {
+  width: 600px;
+}
+
+.signup-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+}
+
+/* Label */
+.input {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.input input {
+  display: block;
+  width: 100%;
+  min-width: 326px;
+  height: 48px;
+  border-radius: 40px;
+  border: 1px solid #ddd;
+  outline: none;
+  background-color: #f7f7f7; 
+  padding: 0 16px; 
+  font-size: 16px;
+  font-family: "Poppins", sans-serif; 
+  transition: border-color 0.3s ease; 
+}
+
+.input input.fullwidth {
+  width: 100% !important;
+}
+
+.input input:focus {
+  border-color: #333;
+}
+
+.input label {
+  margin-left: 10px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.input label.required::after {
+  content: " *";
+}
+
+/* button primary */
+.btn-primary{
+  width: 200px;
+  padding: 16px;
+  height: 48px;
+  border-radius: 40px;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
